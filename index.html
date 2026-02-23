@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>About the Artist | Brandon Moreno</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ff2e93",
+            "neon-blue": "#00C2FF",
+            "neon-yellow": "#CCFF00",
+            "background-light": "#f8f5f7",
+            "background-dark": "#0a0508",
+            "surface-dark": "#141414",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .neon-glow-blue {
+      text-shadow: 0 0 10px rgba(0, 194, 255, 0.5);
+    }
+
+    .neon-dot-yellow {
+      box-shadow: 0 0 8px rgba(204, 255, 0, 0.8);
+    }
+
+    .bw-image {
+      filter: grayscale(100%) contrast(120%);
+    }
+
+    .pet-card:hover .pet-emoji {
+      transform: scale(1.2) rotate(5deg);
+      transition: transform 0.3s ease;
+    }
+
+    .pet-emoji {
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #ff2e93, #a020f0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+  <!-- Top Navigation -->
+  <nav
+    class="sticky top-0 z-50 flex items-center justify-between bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 border-b border-slate-200 dark:border-primary/10">
+    <div class="flex items-center gap-2">
+      <a href="../luminous_landing_page/code.html" class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">arrow_back</span>
+      </a>
+    </div>
+    <h2 class="text-sm font-bold uppercase tracking-widest text-primary">The Luminous Portfolio</h2>
+    <div class="flex items-center gap-4">
+      <span
+        class="material-symbols-outlined text-slate-500 hover:text-neon-blue transition-colors cursor-pointer">share</span>
+    </div>
+  </nav>
+
+  <main class="max-w-2xl mx-auto pb-32">
+
+    <!-- Hero Section: Artist Portrait -->
+    <div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-dark flex items-center justify-center">
+      <!-- Placeholder gradient background since no actual portrait is uploaded yet -->
+      <div style="background-image: url('https://i.postimg.cc/YCyKCdz9/IMG-6328.jpg');"
+        class="absolute inset-0 bg-gradient-to-br from-primary/30 via-purple-900/40 to-background-dark"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,46,147,0.15)_0%,transparent_70%)]">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+      <div class="absolute bottom-8 left-6 right-6">
+        <h1 class="text-5xl font-extrabold leading-tight tracking-tighter text-white">
+          BRANDON <br /> <span class="text-primary">MORENO</span>
+        </h1>
+        <p class="mt-2 text-slate-300 font-medium tracking-wide flex items-center gap-2 uppercase text-xs">
+          <span class="w-2 h-2 rounded-full bg-neon-yellow neon-dot-yellow"></span>
+          Visual Artist &amp; Digital Creator &nbsp;·&nbsp; Racine, Wisconsin
+        </p>
+      </div>
+    </div>
+
+    <!-- Bio Content -->
+    <div class="px-6 py-10 space-y-12">
+
+      <!-- Introduction Section -->
+      <section class="space-y-4">
+        <p class="text-2xl font-bold leading-snug text-slate-900 dark:text-white">
+          "Every piece I create is a window into the world I see — vivid, textured, and alive with feeling."
+        </p>
+        <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
+          Brandon Moreno is a self-driven visual artist based in Racine, Wisconsin, whose work spans digital
+          illustration, mixed media, and expressive painting. His art is driven by a deep fascination with color, form,
+          and the quiet stories found in everyday life.
+        </p>
+      </section>
+
+      <!-- Philosophy Section -->
+      <section class="space-y-4">
+        <h3 class="text-neon-blue font-bold uppercase tracking-[0.2em] text-sm neon-glow-blue">My Philosophy</h3>
+        <div class="p-6 rounded-xl bg-primary/5 border border-primary/20">
+          <p class="text-slate-800 dark:text-slate-200 font-medium italic">
+            Art doesn't have to shout to be heard. Sometimes the most powerful work is the one that sits with you long
+            after you've walked away — the kind that makes you look twice at the ordinary.
+          </p>
+        </div>
+      </section>
+
+      <!-- Exhibitions & Skills -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <section class="space-y-6">
+          <h3 class="text-neon-blue font-bold uppercase tracking-[0.2em] text-sm neon-glow-blue">Exhibitions &amp; Shows
+          </h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 group">
+              <span class="mt-2 w-1.5 h-1.5 shrink-0 rounded-full bg-neon-yellow neon-dot-yellow"></span>
+              <div>
+                <p class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Local
+                  Collective Show, Racine</p>
+                <p class="text-xs text-slate-500 uppercase tracking-wider">2024</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 group">
+              <span class="mt-2 w-1.5 h-1.5 shrink-0 rounded-full bg-neon-yellow neon-dot-yellow"></span>
+              <div>
+                <p class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Wisconsin
+                  Arts Alliance Open Call</p>
+                <p class="text-xs text-slate-500 uppercase tracking-wider">2023</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 group">
+              <span class="mt-2 w-1.5 h-1.5 shrink-0 rounded-full bg-neon-yellow neon-dot-yellow"></span>
+              <div>
+                <p class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Digital
+                  &amp; Mixed Media Showcase</p>
+                <p class="text-xs text-slate-500 uppercase tracking-wider">2022</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="space-y-6">
+          <h3 class="text-neon-blue font-bold uppercase tracking-[0.2em] text-sm neon-glow-blue">Core Mastery</h3>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-neon-yellow neon-dot-yellow"></span>
+              <span class="font-medium">Digital Illustration</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-neon-yellow neon-dot-yellow"></span>
+              <span class="font-medium">Mixed Media &amp; Collage</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-neon-yellow neon-dot-yellow"></span>
+              <span class="font-medium">Photography &amp; Portraiture</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-neon-yellow neon-dot-yellow"></span>
+              <span class="font-medium">Color Theory &amp; Composition</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- ===== THE FAMILY SECTION ===== -->
+      <section class="space-y-6">
+        <div>
+          <h3 class="text-neon-blue font-bold uppercase tracking-[0.2em] text-sm neon-glow-blue">Studio Family</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">The real creative directors behind the scenes.</p>
+        </div>
+
+        <!-- Pet Cards -->
+        <div class="grid grid-cols-1 gap-4">
+
+          <!-- Rex -->
+          <div
+            class="pet-card group flex items-start gap-5 p-5 rounded-xl bg-white/5 dark:bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-all duration-300">
+            <div
+              class="shrink-0 w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-3xl">
+              <span class="pet-emoji">🐱</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <h4 class="font-bold text-lg text-white group-hover:text-primary transition-colors">Rex</h4>
+                <span
+                  class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">Cat</span>
+              </div>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Rex is the undisputed ruler of the studio. Bold, curious, and perpetually underfoot, he has a sixth
+                sense for sitting directly on whatever Brandon is working on. He's developed a strong opinion on bath
+                bombs and is widely considered the studio's most opinionated art critic.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cleo -->
+          <div
+            class="pet-card group flex items-start gap-5 p-5 rounded-xl bg-white/5 dark:bg-white/[0.03] border border-white/10 hover:border-neon-blue/40 transition-all duration-300">
+            <div
+              class="shrink-0 w-16 h-16 rounded-full bg-neon-blue/10 border border-neon-blue/20 flex items-center justify-center text-3xl">
+              <span class="pet-emoji">🐾</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <h4 class="font-bold text-lg text-white group-hover:text-neon-blue transition-colors">Cleo</h4>
+                <span
+                  class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-neon-blue/10 text-neon-blue border border-neon-blue/20">Cat</span>
+              </div>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Cleo brings the elegance. Where Rex is chaos, Cleo is calm — regal, watchful, and deeply convinced she
+                belongs in every photo shoot. She has a quiet appreciation for color swatches and can often be found
+                napping in the warmest patch of afternoon light, no doubt absorbing inspiration.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bob -->
+          <div
+            class="pet-card group flex items-start gap-5 p-5 rounded-xl bg-white/5 dark:bg-white/[0.03] border border-white/10 hover:border-neon-yellow/40 transition-all duration-300">
+            <div
+              class="shrink-0 w-16 h-16 rounded-full bg-neon-yellow/10 border border-neon-yellow/20 flex items-center justify-center text-3xl">
+              <span class="pet-emoji">🦜</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <h4 class="font-bold text-lg text-white group-hover:text-neon-yellow transition-colors"
+                  style="text-shadow: none;">Bob</h4>
+                <span
+                  class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-neon-yellow/10 border border-neon-yellow/20"
+                  style="color: #CCFF00;">Bird</span>
+              </div>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Bob the bird is a burst of pure energy and color — the studio's resident musician, morning announcer,
+                and head of ambient sound design. He has strong opinions about silence (he hates it) and a gift for
+                chirping at precisely the wrong moment. Brandon considers him a spiritual guide for bold palette
+                choices.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Little caption -->
+        <p class="text-center text-xs text-slate-600 dark:text-slate-500 italic mt-2">
+          Rex, Cleo &amp; Bob — co-creators, critics, and studio chaos agents since day one.
+        </p>
+      </section>
+      <!-- ===== END FAMILY SECTION ===== -->
+
+      <!-- CTA -->
+      <div class="pt-4">
+        <a href="../artworks_gallery_grid/code.html"
+          class="block w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] text-center">
+          View the Gallery
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Bottom Navigation Bar -->
+  <div
+    class="fixed bottom-0 left-0 right-0 z-[60] flex gap-2 border-t border-slate-200 dark:border-primary/20 bg-background-light dark:bg-background-dark px-4 pb-3 pt-2">
+    <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-primary transition-colors"
+      href="../luminous_landing_page/code.html">
+      <div class="flex h-8 items-center justify-center">
+        <span class="material-symbols-outlined">home</span>
+      </div>
+      <p class="text-[10px] font-bold uppercase tracking-wider">Home</p>
+    </a>
+    <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-primary transition-colors"
+      href="../artworks_gallery_grid/code.html">
+      <div class="flex h-8 items-center justify-center">
+        <span class="material-symbols-outlined">grid_view</span>
+      </div>
+      <p class="text-[10px] font-bold uppercase tracking-wider">Works</p>
+    </a>
+    <a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+      <div class="flex h-8 items-center justify-center">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">person</span>
+      </div>
+      <p class="text-[10px] font-bold uppercase tracking-wider">About</p>
+    </a>
+    <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-primary transition-colors"
+      href="#">
+      <div class="flex h-8 items-center justify-center">
+        <span class="material-symbols-outlined">chat_bubble</span>
+      </div>
+      <p class="text-[10px] font-bold uppercase tracking-wider">Inquiry</p>
+    </a>
+  </div>
+
+</body>
+
+</html>
